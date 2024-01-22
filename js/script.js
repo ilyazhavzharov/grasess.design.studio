@@ -28,3 +28,7 @@ SmoothScroll({
   // Поддержка тачпада
   touchpadSupport: true,
 });
+
+new TypeIt("#typeText", {
+  speed: 75,
+}).go();
