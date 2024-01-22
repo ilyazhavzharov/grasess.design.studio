@@ -1,0 +1,64 @@
+@import url('https://fonts.cdnfonts.com/css/neutral-face');
+
+body {
+    background-color: #000;
+}
+
+.container {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.general {
+    padding-top: 70px;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.general__background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.background-img {
+    width: 100%;
+}
+
+.general__logo {
+    text-align: center;
+}
+
+.general__image-bear {
+    position: relative;
+}
+
+.general__text {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px 45px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(45, 45, 45, 0.25);
+    z-index: 10;
+}
+
+.general__text-title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Neutral Face";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41.4px;
+    text-transform: uppercase;
+}
+
+.general__text-title span {
+    color: #A4C63F;
+}
