@@ -1,7 +1,41 @@
 @import url('https://fonts.cdnfonts.com/css/neutral-face');
-
 body {
     background-color: #000;
+    position: relative;
+    color: #fff;
+    background-color: #000;
+    --sb-track-color: #000000;
+    --sb-thumb-color: #A4C63F;
+    --sb-size: 5px;
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size) 
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 1px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 5px; /* Ширина скроллбара */
+}
+  
+textarea::-webkit-scrollbar-track {
+    background-color: #fff; /* Цвет фона трека скроллбара */
+}
+  
+textarea::-webkit-scrollbar-thumb {
+    background-color: #b453ff5b; /* Цвет ползунка скроллбара */
+    border-radius: 20px; /* Радиус углов ползунка */
 }
 
 .container {
@@ -13,7 +47,6 @@ body {
 .general {
     padding-top: 70px;
     position: relative;
-    padding-bottom: 70px;
 }
 
 .general__background {
