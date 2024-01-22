@@ -1,3 +1,10 @@
+button {
+    color: #000;
+    font-family: 'Neutral Face', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
 body {
     background-color: #000;
     position: relative;
@@ -160,7 +167,6 @@ textarea::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: #A4C63F;
     box-shadow: 0px 0px 20px 0px rgba(164, 198, 63, 0.50);
-    color: #000;
 }
 
 .team {
@@ -187,7 +193,7 @@ textarea::-webkit-scrollbar-thumb {
 .team__card-title {
     text-transform: uppercase;
     color: #FFF;
-    font-family: "Neutral Face";
+    font-family: 'Neutral Face', sans-serif;
     font-size: 18px;
     font-weight: 700;
     margin-top: 25px;
@@ -210,7 +216,7 @@ textarea::-webkit-scrollbar-thumb {
     width: 100%;
     padding: 5px;
     color: #FFF;
-    font-family: "Neutral Face";
+    font-family: 'Neutral Face', sans-serif;
     font-size: 9px;
     font-weight: 400;
 }
@@ -237,7 +243,7 @@ textarea::-webkit-scrollbar-thumb {
 
 .portfolio__card-title-left {
     color: #FFF;
-    font-family: "Neutral Face";
+    font-family: 'Neutral Face', sans-serif;
     font-size: 25px;
     font-weight: 700;
     line-height: 138%; /* 34.5px */
@@ -246,7 +252,7 @@ textarea::-webkit-scrollbar-thumb {
 
 .portfolio__card-title-right {
     color: #FFF;
-    font-family: "Neutral Face";
+    font-family: 'Neutral Face', sans-serif;
     font-size: 25px;
     font-weight: 700;
     line-height: 138%; /* 34.5px */
@@ -315,14 +321,12 @@ textarea::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 50px;
 }
 
 .social__item {
-    width: 77px;
-    height: 77px;
-    flex-shrink: 0;
+    padding: 10px;
     border-radius: 10px;
     border: 1px solid #A4C63F;
     display: flex;

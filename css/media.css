@@ -3,3 +3,30 @@
         display: block;
     }
 }
+
+@media(max-width: 350px) {
+    .portfolio__card-image-right {
+        height: 300px;
+    }
+    .portfolio__card-image-left {
+        height: 300px;
+    }
+    .portfolio__card-works-left {
+        height: 200px;
+    }
+    .portfolio__card-works-right {
+        height: 200px;
+    }
+    .portfolio__card {
+        max-height: 300px;
+    }
+    .general__text-title {
+        font-size: 25px;
+    }
+    .portfolio__card-title-right {
+        font-size: 20px;
+    }
+    .portfolio__card-title-left {
+        font-size: 20px;
+    }
+}
