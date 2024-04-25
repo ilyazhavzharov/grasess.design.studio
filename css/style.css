@@ -1,0 +1,126 @@
+body {
+    background-color: #000;
+}
+
+.container {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.header {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 55px;
+    position: relative;
+}
+
+.title__text {
+    width: 300px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+.bg-line {
+    position: absolute;
+    left: 0;
+    top: -30px;
+    width: 100%;
+    display: none;
+}
+
+.text {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.text__bacground-left {
+    color: #AAFF56;
+    font-size: 300px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    margin-left: -40px;
+}
+
+.text__bacground-right {
+    color: #AAFF56;
+    font-size: 300px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    margin-left: -100px;
+}
+
+.bottom-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    margin: 0 auto;
+}
+
+.smoke-image {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+
+/* /////////////////////////////////////////////// */
+.active-string {
+    position: relative;
+    overflow: hidden;
+}
+  
+.string__wrapper {
+    display: flex;
+}
+  
+.string__item-left {
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 0 30px;
+    animation: activeStringLeft 7s linear infinite;
+}
+  
+@keyframes activeStringLeft {
+    0% {
+        transform: translateZ(0);
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.string__item-right {
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 0 30px;
+    animation: activeStringRight 7s linear infinite;
+}
+
+@keyframes activeStringRight{
+    0% { 
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        transform: translateZ(0);
+    }
+}
+/* ///////////////////////////////////////////////////////////////// */
+
+@media(max-width: 1000px) {
+    .bg-line {
+        display: block;
+    }
+}
